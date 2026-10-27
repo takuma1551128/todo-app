@@ -17,5 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/tasks', function () {
-    return 'ここに Todo アプリを作ります';
+    return view('tasks.index');
+});
+Route::get('/about', function () {
+    return view('about');
 });
